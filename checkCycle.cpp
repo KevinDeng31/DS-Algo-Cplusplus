@@ -25,7 +25,7 @@ public:
 		return false;
 	}
 
-	bool canFinish(int numCourses, vector<pair<int, int>>& prerequisites) {
+	bool canFinish(int numCourses, vector<pair<int, int>>& edge) {
 
 		/* Create 2 vectors to store the nodes have been visited and which are in recursion stack
 		   Create one 2-D vectors to store the edges in the graph */
