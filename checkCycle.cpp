@@ -34,7 +34,7 @@ public:
 		vector<vector<int>> preq(numCourses, vector<int>(0));
 
 		for (pair<int, int> p : prerequisites) {
-			preq[p.first].push_back(p.second);
+			preq[p.second].push_back(p.first);
 		}
 
 		for (size_t i = 0; i < preq.size(); ++i) {
